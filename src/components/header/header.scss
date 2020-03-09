@@ -9,6 +9,8 @@
   font-weight: 300;
   padding: 0.2rem 0.5rem;
   margin-right: 8px;
+  -moz-appearance: none; /* older firefox */
+  -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
 
   @media only screen and (min-width: 768px) {
     width: 30rem;
