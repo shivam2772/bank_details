@@ -1,0 +1,109 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  width: 100%;
+  // border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+thead {
+  tr:first-child {
+    background: transparent;
+  }
+}
+
+tr {
+  background: white;
+}
+
+td,
+th {
+  // border: 1px solid #dddddd;
+  text-align: left;
+  padding: 16px 8px;
+}
+td {
+  &:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  font-size: 14px;
+  button {
+    border: none;
+    background: transparent;
+  }
+}
+.banklistview {
+  margin-top: 130px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+  padding: 0 24px;
+  overflow-x: auto;
+  background-color: #f1ececfc;
+  min-height: 100vh;
+  width: 100%;
+
+  &__title {
+    padding-top: 40px;
+  }
+  .table__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    button,
+    .select_dropdown {
+      margin-left: 8px;
+    }
+    .pages-show {
+      margin-left: 24px;
+    }
+    .select_dropdown {
+      width: 5rem;
+    }
+  }
+  .bank-name {
+    display: flex;
+    button {
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.noResults {
+  text-align: center;
+  font-size: 28px;
+}
+
+.bank-detail {
+  margin-top: 130px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+  padding: 0 24px;
+  background-color: #f1ececfc;
+  min-height: 100vh;
+  width: 100%;
+  p {
+    margin-top: 0;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__namecontainer {
+    padding-left: 20px;
+    p {
+      margin-top: 0;
+    }
+  }
+}
